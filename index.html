@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Islamic University Chittagong Application Form</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>International Islamic University Chittagong Application Form</h2>
+        <form>
+            <!-- Bachelor Programs -->
+            <div class="form-group">
+                <label for="Program/Subject">Program/Subject *</label>
+                <select class="form-control" id="Program/Subject" required>
+                    <option value="Bachelor of Arts (Hans.) in Our’anic Sciences and Islamic Studies (QSIS)">Bachelor of
+                        Arts (Hans.) in Our’anic Sciences and Islamic Studies (QSIS)</option>
+                    <option value="Bachelor of Arts (Hons.) in Da’wah and Islamic Studies (DIS)">Bachelor of Arts
+                        (Hons.) in Da’wah and Islamic Studies (DIS)</option>
+                    <option value="Bachelor of Arts (Hons.) in Hadith and Islamic Studies (SHIS)">Bachelor of Arts
+                        (Hons.) in Hadith and Islamic Studies (SHIS)</option>
+                    <option value="Bachelor of Science in Computer Science and Engineering (CSE)">Bachelor of Science in
+                        Computer Science and Engineering (CSE)</option>
+                    <option value="Bachelor of Science in Electrical and Electronic Engineering (EEE)">Bachelor of
+                        Science in Electrical and Electronic Engineering (EEE)</option>
+                    <option value="Bachelor of Science in Electronic and Telecommunication Engineering (ETE)">Bachelor
+                        of Science in Electronic and Telecommunication Engineering (ETE)</option>
+                    <option value="Bachelor of Science in Computer and Communication Engineering (CCE)">Bachelor of
+                        Science in Computer and Communication Engineering (CCE)</option>
+                    <option value="Bachelor of Science in Civil Engineering (CE)">Bachelor of Science in Civil
+                        Engineering (CE)</option>
+                    <option value="Bachelor of Pharmacy (B. Pharm, Hons.)">Bachelor of Pharmacy (B. Pharm, Hons.)
+                    </option>
+                    <option value="Bachelor of Business Administration (BBA)">Bachelor of Business Administration (BBA)
+                    </option>
+                    <option value="BSS (Hons.) in Economics & Banking">BSS (Hons.) in Economics & Banking</option>
+                    <option value="Bachelor of Arts (Hons.) in English Language & Literature (ELL)">Bachelor of Arts
+                        (Hons.) in English Language & Literature (ELL)</option>
+                    <option value="Bachelor of Arts (Hons.) in Arabic Language & Literature (ALL)">Bachelor of Arts
+                        (Hons.) in Arabic Language & Literature (ALL)</option>
+                    <option value="Bachelor of Laws (LL.B, Hons.)">Bachelor of Laws (LL.B, Hons.)</option>
+                </select>
+            </div>
+
+
+            <!-- Semester -->
+            <div class="form-group">
+                <label for="semester">Semester *</label>
+                <select class="form-control" id="semester" required>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <!-- Transport -->
+            <div class="form-group">
+                <label for="transport">Transport *</label>
+                <select class="form-control" id="transport" required>
+                    <option value="Yes">agrabad</option>
+                    <option value="No">chawkbazar</option>
+                    <option value="Yes">badharhat</option>
+                    <option value="No">mirorsorai</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="PersonalInformation"> Personal Information </label>
+            </div>
+
+            <!-- Applicant's Name (English) -->
+            <div class="form-group">
+                <label for="fullName">Applicant's Name (English) *</label>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="male" name="gender" value="Male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="female" name="gender" value="Female" required>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <!-- father's Name, father's Occupation, and father's Mobile Number -->
+            <div class="Father-address">
+                <h4>Father Address</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="fatherName">Father's Name *</label>
+                            <input type="text" class="form-control" id="fatherName"
+                                placeholder="Enter your father's name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="fatherOccupation">Father's Occupation</label>
+                            <input type="text" class="form-control" id="fatherOccupation"
+                                placeholder="Enter your father's occupation">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="fatherMobileNumber">Father's Mobile Number</label>
+                            <input type="tel" class="form-control" id="fatherMobileNumber"
+                                placeholder="Enter father's mobile number">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Mother's Name, Mother's Occupation, and Mother's Mobile Number -->
+                <div class="Mother-address">
+                    <h4>Mother Address</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="motherName">Mother's Name *</label>
+                                <input type="text" class="form-control" id="motherName"
+                                    placeholder="Enter your mother's name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="motherOccupation">Mother's Occupation</label>
+                                <input type="text" class="form-control" id="motherOccupation"
+                                    placeholder="Enter your mother's occupation">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="motherMobileNumber">Mother's Mobile Number</label>
+                                <input type="tel" class="form-control" id="motherMobileNumber"
+                                    placeholder="Enter mother's mobile number">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Guardian's Name, Guardian's Occupation, and Guardian's Mobile Number -->
+                    <div class="Guardian-address">
+                        <h4>Guardian Address</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="guardianName">Guardian's Name</label>
+                                    <input type="text" class="form-control" id="guardianName"
+                                        placeholder="Enter your guardian's name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="guardianOccupation">Guardian's Occupation</label>
+                                    <input type="text" class="form-control" id="guardianOccupation"
+                                        placeholder="Enter guardian's occupation">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="guardianMobileNumber">Guardian's Mobile Number</label>
+                                    <input type="tel" class="form-control" id="guardianMobileNumber"
+                                        placeholder="Enter guardian's mobile number">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Applicant's Mobile Number -->
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="mobileNumber">Applicant's Mobile Number *</label>
+                                    <input type="tel" class="form-control" id="mobileNumber"
+                                        placeholder="Enter your mobile number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="alternativeNumber">Alternative Number</label>
+                                    <input type="tel" class="form-control" id="alternativeNumber"
+                                        placeholder="Enter an alternative number">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="email">Applicant's Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Marital Status -->
+                        <div class="form-group">
+                            <label>Marital Status *</label>
+                            <select class="form-control" id="maritalStatus" required>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Widowed">Widowed</option>
+                            </select>
+                        </div>
+
+                        <!-- Religion -->
+                        <div class="form-group">
+                            <label for="religion">Religion *</label>
+                            <input type="text" class="form-control" id="religion" placeholder="Enter your religion"
+                                required>
+                        </div>
+
+
+                        <!-- Blood Group -->
+                        <div class="form-group">
+                            <label for="bloodGroup">Blood Group</label>
+                            <input type="text" class="form-control" id="bloodGroup"
+                                placeholder="Enter your blood group">
+                        </div>
+
+                        <!-- Birth Certificate No -->
+                        <div class="form-group">
+                            <label for="birthCertificate">Birth Certificate No</label>
+                            <input type="text" class="form-control" id="birthCertificate"
+                                placeholder="Enter birth certificate number">
+                        </div>
+                        <!-- National ID No -->
+                        <div class="form-group">
+                            <label for="nationalId">National ID No</label>
+                            <input type="text" class="form-control" id="nationalId"
+                                placeholder="Enter your national ID">
+                        </div>
+                        <!-- Country -->
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" class="form-control" id="country" placeholder="Enter your country"
+                                required>
+                        </div>
+
+                        <!-- Nationality -->
+                        <div class="form-group">
+                            <label for="nationality">Nationality *</label>
+                            <input type="text" class="form-control" id="nationality"
+                                placeholder="Enter your nationality" required>
+                        </div>
+
+                        <!-- Address Details -->
+                        <!-- Present Address -->
+                        <div class="present-address">
+                            <h4>Present Address</h4>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="presentHouseNo">House No./Name</label>
+                                    <input type="text" class="form-control" id="presentHouseNo"
+                                        placeholder="House No./Name" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="presentRoad">Road/Village *</label>
+                                    <input type="text" class="form-control" id="presentRoad" placeholder="Road/Village"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="presentLane">Lane</label>
+                                    <input type="text" class="form-control" id="presentLane" placeholder="Lane">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="presentBlock">Block</label>
+                                    <input type="text" class="form-control" id="presentBlock" placeholder="Block">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="presentArea">Area/Post office *</label>
+                                    <input type="text" class="form-control" id="presentArea"
+                                        placeholder="Area/Post office" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="presentThana">Thana/Upazila *</label>
+                                    <input type="text" class="form-control" id="presentThana"
+                                        placeholder="Thana/Upazila" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="presentDistrict">District *</label>
+                                    <input type="text" class="form-control" id="presentDistrict" placeholder="District"
+                                        required>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Permanent Address -->
+                        <div class="permanent-address">
+                            <h4>Permanent Address</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="sameAsPresent">
+                                <label class="form-check-label" for="sameAsPresent">Click the box if same as Present
+                                    Address</label>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="permanentHouseNo">House No./Name</label>
+                                    <input type="text" class="form-control" id="permanentHouseNo"
+                                        placeholder="House No./Name">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="permanentRoad">Road/Village *</label>
+                                    <input type="text" class="form-control" id="permanentRoad"
+                                        placeholder="Road/Village" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="permanentLane">Lane</label>
+                                    <input type="text" class="form-control" id="permanentLane" placeholder="Lane">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="permanentBlock">Block</label>
+                                    <input type="text" class="form-control" id="permanentBlock" placeholder="Block">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="permanentArea">Area/Post office *</label>
+                                    <input type="text" class="form-control" id="permanentArea"
+                                        placeholder="Area/Post office" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="permanentThana">Thana/Upazila *</label>
+                                    <input type="text" class="form-control" id="permanentThana"
+                                        placeholder="Thana/Upazila" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="permanentDistrict">District *</label>
+                                    <input type="text" class="form-control" id="permanentDistrict"
+                                        placeholder="District" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Examination/Degree Details -->
+
+                        <!-- Applicant Academic Information -->
+                        <div class="Applicant-Academic-Information">
+                            <h4>Applicant Academic Information</h4>
+
+                            <!-- Academic Qualifications - SSC -->
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="sscBoard">SSC Board *</label>
+                                    <input type="text" class="form-control" id="sscBoard" placeholder="Enter SSC Board"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="sscYear">SSC Year *</label>
+                                    <input type="text" class="form-control" id="sscYear" placeholder="Enter SSC Year"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="sscGPA">SSC GPA *</label>
+                                    <input type="text" class="form-control" id="sscGPA" placeholder="Enter SSC GPA"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="sscGroup">SSC Group *</label>
+                                    <input type="text" class="form-control" id="sscGroup" placeholder="Enter SSC Group"
+                                        required>
+                                </div>
+                                <div class="col-md-8 mb-3">
+                                    <label for="sscSchool">SSC School/College Name *</label>
+                                    <input type="text" class="form-control" id="sscSchool"
+                                        placeholder="Enter SSC School/College Name" required>
+                                </div>
+                            </div>
+
+                            <!-- Academic Qualifications - HSC -->
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="hscBoard">HSC Board *</label>
+                                    <input type="text" class="form-control" id="hscBoard" placeholder="Enter HSC Board"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="hscYear">HSC Year *</label>
+                                    <input type="text" class="form-control" id="hscYear" placeholder="Enter HSC Year"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="hscGPA">HSC GPA *</label>
+                                    <input type="text" class="form-control" id="hscGPA" placeholder="Enter HSC GPA"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="hscGroup">HSC Group *</label>
+                                    <input type="text" class="form-control" id="hscGroup" placeholder="Enter HSC Group"
+                                        required>
+                                </div>
+                                <div class="col-md-8 mb-3">
+                                    <label for="hscSchool">HSC School/College Name *</label>
+                                    <input type="text" class="form-control" id="hscSchool"
+                                        placeholder="Enter HSC School/College Name" required>
+                                </div>
+                            </div>
+
+
+                            <!-- You can create a dynamic form for adding multiple exam/degree details if needed -->
+
+                            <!-- Upload Transcript (PDF) -->
+                            <div class="form-group">
+                                <label for="transcript">Transcript (Upload PDF) *</label>
+                                <input type="file" class="form-control-file" id="transcript" accept=".pdf" required>
+                            </div>
+
+                            <!-- Upload Passport-sized Photo (JPG or PNG) -->
+                            <div class="form-group">
+                                <label for="photo">Passport-sized Photo (Upload JPG or PNG) *</label>
+                                <input type="file" class="form-control-file" id="photo" accept=".jpg, .png" required>
+                            </div>
+                            <!-- Student Signature -->
+                            <div class="form-group">
+                                <label for="studentSignature">Student Signature (Upload JPG or PNG) *</label>
+                                <input type="file" class="form-control-file" id="studentSignature" accept=".jpg, .png"
+                                    required>
+                            </div>
+                            <!-- Application Fee -->
+                            <div class="form-group">
+                                <label for="fee">Application Fee</label>
+                                <input type="text" class="form-control" id="fee" placeholder="Enter application fee">
+                            </div>
+
+                            <!-- Payment Method -->
+                            <div class="form-group">
+                                <label for="paymentMethod">Payment Method</label>
+                                <select class="form-control" id="paymentMethod">
+                                    <option>Credit Card</option>
+                                    <option>Debit Card</option>
+                                    <option>Bank Transfer</option>
+                                </select>
+                            </div>
+
+                            <!-- Transaction Details -->
+                            <div class="form-group">
+                                <label for="transactionDetails">Transaction Details</label>
+                                <textarea class="form-control" id="transactionDetails" rows="3"
+                                    placeholder="Enter transaction details"></textarea>
+                            </div>
+
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <!-- Success Message (Initially Hidden) -->
+                            <div class="alert alert-success" id="successMessage" style="display: none;">
+                                Submitted Successfully
+                            </div>
+        </form>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
